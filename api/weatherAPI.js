@@ -8,7 +8,7 @@ export const fetchWeatherData = async (latitude, longitude) => {
       {
         params: {
           key: apiKey,
-          q: `Santander`,
+          q: `${latitude}, ${longitude}`,
         },
       }
     );
